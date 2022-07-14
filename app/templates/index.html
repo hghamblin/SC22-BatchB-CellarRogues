@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>AI Generate TV Scripts</title>
+        <link rel="icon" type="image/x-icon" href="static/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://cocalc7.ai-camp.dev/b2dbc186-e24f-4133-b4c4-6c7b61f1804b/raw/SC22-BatchB-Cellar-Rogues/app/static/img/download%20(1).png" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="{{ url_for('static',filename='/css/styles.css') }}" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+            <div class="container px-5">
+              <a class="navbar-brand" href="#page-top"> <marquee> Welcome </marquee></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href = "#AboutModel" >About</a></li>
+                        <li class="nav-item"><a class="nav-link" href = "#Timeline" >Timeline</a></li>
+                        <li class="nav-item"><a class="nav-link" href = "#MeetTeam" >Team</a></li>
+                      <li class="nav-item"><a class="nav-link" href="https://github.com/hghamblin/SC22-BatchB-Cellar-Rogues" target = " blank">Check out our code!</a></li>
+                      <li class="nav-item"><a class="nav-link" href = "#MeetTeam" ></a></li>
+                      <li> <img class = "left" src="https://static.wixstatic.com/media/12b467_a4ceef0f338c41c7885cb083ea36a00f~mv2_d_1742_1743_s_2.png/v1/fill/w_68,h_68,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/ai%20camp%20logo.png" alt="AICampIcon"
+                               style="width:50px;height:50px;"></li>
+                      
+                   
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Header-->
+        <header class="masthead text-center text-white"  style="background-image: url('static/img/background.png');" >
+            <div class="masthead-content">
+                <div class="container px-5">
+                    <h1 class="masthead-heading mb-0">Generate your own TV Scripts</h1>
+                    <h2 class="masthead-subheading mb-0">Also Be Super Cool and Chill</h2>
+                    <a class="btn btn-primary btn-xl rounded-pill mt-5" href={{ url_for('tv_show_selection')}}>Try It Now!</a>
+                </div>
+            </div>
+            <div class="bg-circle-1 bg-circle"></div>
+            <div class="bg-circle-2 bg-circle"></div>
+            <div class="bg-circle-3 bg-circle"></div>
+            <div class="bg-circle-4 bg-circle"></div>
+        </header>
+        <!-- Content section 1-->
+        <section id="scroll">
+            <div class="container px-5">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-6 order-lg-2">
+                        <div class="p-5"><img class="img-fluid rounded-circle" src="https://wompampsupport.azureedge.net/fetchimage?siteId=7575&v=2&jpgQuality=100&width=700&url=https%3A%2F%2Fi.kym-cdn.com%2Fentries%2Ficons%2Fmobile%2F000%2F002%2F650%2FAdventureTime.jpg" alt="..." /></div>
+                    </div>
+                    <div class="col-lg-6 order-lg-1">
+                        <div class="p-5">
+                            <h2 class="display-4" id = "AboutModel">About Our Model</h2>
+                            <ul> 
+                              <p>Our model is a TV script generator based on a number of shows, including:
+                                  <ul>
+                                    <li>Adventure Time</li>
+                                    <li>Avatar</li>
+                                    <li>The Office</li>
+                                    <li>Arthur</li>
+                                    <li>Spongebob</li>
+                                    <li>Futurama</li>
+                                    <li>Seinfeld</li>
+                                    <li>The Simpsons</li>
+                                  </ul>
+                              </ul>
+                              <p>
+                              </p>Instructions: Input a character name, then a line for them to say and the generator will output an accompanying response from another character in the show you choose.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+  
+  <!-- Content section 2-->
+     <section class="page-section" id="about">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Our AI timeline.</h2>
+                </div>
+                <ul class="timeline">
+                    <li>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstatic.vecteezy.com%2Fsystem%2Fresources%2Fpreviews%2F000%2F380%2F295%2Foriginal%2Fplanning-vector-icon.jpg&f=1&nofb=1" width = "200" height = "200" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4 class="subheading">Week One</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted"> At the start of the camp, we initially wanted to create an AI that would generate job descriptions.
+                        We all liked this idea, but the data was not good enough because the data that we had had too many flaws and issues!</p></div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0039%2F7849%2F4067%2Fproducts%2FIMG_1060_1024x1024.jpg%3Fv%3D1539020790&f=1&nofb=1" width = "200" height = "200" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4 class="subheading">Beginning of Week Two</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">Around the middle of the second week, we decided to set our sights on a joke generator instead.
+                           Unfortunately, once again, we had trouble with our data sets, this time because of the nonsensical and profane jokes that the AI would end up developing.</p></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="https://img.freepik.com/free-vector/vintage-television-cartoon-icon-illustration_138676-1962.jpg?w=2000" width = "200" height = "200" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4 class="subheading">End of Week Two</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">Finally, near the end of the second week, we changed our AI to become a TV script generator.
+                          Because of our experience from the previous two models, it took very little time to create this one.
+                           We decided that this model would be best, since there weren't any outstanding errors in our data, and there was a plethora of unique and useful data on the internet.</p></div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.uu.se%2FdigitalAssets%2F895%2Fc_895428-l_3-k_image.jpg&f=1&nofb=1" width = "200" height = "200" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4 class="subheading">Week Three </h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted"> In the third week, we started making our website, which includes learning about and using HTML, CSS, and Flask.
+                          We decided to make a HTML page for each TV show, which believe makes the user experience better. There are many aspects to our website that we believe will help the user experience, which includes the drop down menus for the main characters. This will help prevent typos and ensure that the AI can generate its best code.</p></div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image">
+                            <h4>
+                                Our
+                                <br />
+                                End
+                                <br />
+                                Result!
+                                <br />
+                            </h4>
+                      </div>
+              </ul>
+            </div>
+          <p align = "center">
+                    TL;DR: We faced and overcame challenges of data application and interpretation to create an AI that would generate script excerpts for some of our favorite TV shows.
+                  </p>
+        </section>
+
+
+
+
+          <!-- Team-->
+        <section class="page-section bg-light" id="team">
+            <div class="container">
+                <div class="text-center"><br>
+                    <h2 class="section-heading text-uppercase" id = "MeetTeam">Our Team members!</h2>
+                    <h3 class="section-subheading text-muted">We're pretty cool.</h3>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="https://www.nicepng.com/png/full/157-1576012_katara-de-avatar-katara-transparent.png" width="100" height="100 alt="..." />
+                            <h4>Aatefa R.</h4>
+                            <p class="text-muted">Much Needed Moral Compass</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="https://openpsychometrics.org/tests/characters/test-resources/pics/S/7.jpg" width="100" height="100 alt="..." />
+                            <h4>Emmett Torpey</h4>
+                            <p class="text-muted">Guy with the Great Ideas</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="https://i.pinimg.com/550x/bf/e1/a4/bfe1a4bdf8cd8cb0accfc42585aad450.jpg" width="100" height="100" alt="..." />
+                            <h4>Mako Faye</h4>
+                            <p class="text-muted">Person Who Knows html</p>
+                        </div>
+                    </div>
+                             <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="https://64.media.tumblr.com/e2fa67c597ae9c78234949e15a763a1e/4c8ab310c4ca7398-50/s400x600/3cd00de0b77505829f53ec343e4684a1f2803cde.png" width="100" height="100" alt="..." />
+                            <h4>Samantha Judd</h4>
+                            <p class="text-muted">Certified Gem</p>
+                        </div>
+                    </div>
+                             <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="https://i.imgur.com/6yiiC4M.png" width="100" height="100" alt="..." />
+                            <h4>Kiet Bui</h4>
+                            <p class="text-muted">Has Concerning Dreams</p>
+    </div>
+                   </div>
+                            <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/SNice.svg/800px-SNice.svg.png" width="100" height="100" alt="..." />
+                            <h4>Andrew Ku</h4>
+                            <p class="text-muted">All Around Good Time</p>
+                    </div>
+                              <div>
+                              </div>
+                  </div>
+                <div class="row">
+                    <div class="col-lg-8 mx-auto text-center"><p class="large text-muted">To learn more about AI Camp, or be epic and cool and find hot singles near you.</p></div>
+                </div>
+        </section>
+        <!-- Footer-->
+        <footer class="py-5 bg-black">
+            <div class="container px-5"><p class="m-0 text-center text-white small">Copyright &copy; Your Website 2022</p></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>

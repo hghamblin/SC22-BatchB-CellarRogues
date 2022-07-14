@@ -1,0 +1,153 @@
+<html lang="en">
+
+
+
+    <head>
+      <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>TV Show Scripts Generator</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="static/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
+        <!-- Simple line icons-->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css" rel="stylesheet" />
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
+        <!-- JQUERY -->
+        <script class="u-script" type="text/javascript" src="{{ url_for('static', filename='jquery.js') }}" defer=""></script>
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="{{ url_for('static',filename='css/styles.css') }}" rel="stylesheet" />
+        <link href="../static/css/styles_TvShowSelection.css" rel="stylesheet" />
+  </head>
+
+
+
+  <body id="page-top">
+      <!-- Navigation-->
+       <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+            <div class="container px-5">
+              <a class="navbar-brand" href="#page-top"> <marquee> Choose a Tv-Show! </marquee></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href = "https://cocalc7.ai-camp.dev/b2dbc186-e24f-4133-b4c4-6c7b61f1804b/port/12345/" >Home Page</a></li>
+                      <li class="nav-item"><a class="nav-link" href="https://github.com/hghamblin/SC22-BatchB-Cellar-Rogues" target = " blank">Check out our code!</a></li>
+                      <li class="nav-item"><a class="nav-link" href = "#MeetTeam" ></a></li>
+                      <li> <img class = "center" src="https://static.wixstatic.com/media/12b467_a4ceef0f338c41c7885cb083ea36a00f~mv2_d_1742_1743_s_2.png/v1/fill/w_68,h_68,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/ai%20camp%20logo.png" alt="AICampIcon"
+                               style="width:50px;height:50px;"></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </body>
+
+
+
+    <section class="content-section" id="portfolio">
+            <div class="container px-4 px-lg-5">
+                <div class="content-section-heading text-center">
+                    <h3 class="text-secondary mb-0">Tv-Shows</h3>
+                    <h2 class="mb-5">Recent Projects</h2>
+                </div>
+                <div class="row gx-0">
+                    <div class="col-lg-6">
+                        <a class="portfolio-item" href={{ url_for('adventure_time')}}>
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <div class="h2">Adventure Time</div>
+                                    <p class="mb-0">An American fantasy animated television series created by Pendleton Ward for Cartoon Network. The series follows the adventures of a boy named Finn and his best friend and adoptive brother Jake!</p>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="https://cocalc7.ai-camp.dev/b2dbc186-e24f-4133-b4c4-6c7b61f1804b/raw/SC22-BatchB-Cellar-Rogues/app/static/img/aCuoSxQ.jpeg" width="600" height="300" alt="..." />
+                      </a>
+                    </div>
+
+                  <div class="col-lg-6">
+                        <a class="portfolio-item" href={{url_for('spongebob')}}>
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <div class="h2">SpongeBob SquarePants</div>
+                                    <p class="mb-0">An animated series that follows the misadventures of a talking sea sponge who works at a fast food restaurant, attends a boating school, and lives in an underwater pineapple.</p>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="https://hbomax-images.warnermediacdn.com/images/GYVXfmQdrZ56gqgEAAACy/tileburnedin?size=1280x720&partner=hbomaxcom&v=15bed5804c3f2df19f3f963a4e41d3bf&host=art-gallery.api.hbo.com&language=en-us&w=1280" width="600" height="300" alt="..." />
+                        </a>
+                    </div>
+                  <div class="col-lg-6">
+                        <a class="portfolio-item" href={{url_for('avatar')}}>
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <div class="h2">Avatar: The Last Airbender</div>
+                                    <p class="mb-0">In a war-torn world of elemental magic, a young boy reawakens to undertake a dangerous mystic quest to fulfill his destiny as the Avatar, and bring peace to the world!</p>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="https://wegotthiscovered.com/wp-content/uploads/2022/06/avatar-airbender-header-1.jpg" width="600" height="300" alt="..." />
+
+                        </a>
+                    </div>
+
+                   <div class="col-lg-6">
+                        <a class="portfolio-item" href={{ url_for('arthur')}}>
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <div class="h2">Arthur</div>
+                                    <p class="mb-0">An animated series that follows the life of Arthur Read, who demonstrates to kids how to deal with such childhood traumas and challenges as homework, teachers and bullies!</p>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="https://www.eriehistory.org/assets/BlogImages/Arthur.jpg" width="600" height="300" alt="..." />
+                        </a>
+                    </div>
+
+                 <div class="col-lg-6">
+                        <a class="portfolio-item" href={{ url_for('the_simpsons')}}>
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <div class="h2">The Simpsons</div>
+                                    <p class="mb-0">An animated series that follows the exploits of a hapless and semi-dysfunctional nuclear family named the Simpsons, who live in the fictional town of Springfield, whose various inhabitants add to the comedy, angst, satire, and parody of this series!</p>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="https://ntvb.tmsimg.com/assets/p18722572_b_h8_ak.jpg?w=960&h=540" width="600" height="300" alt="..." />
+                        </a>
+                    </div>
+
+          <div class="col-lg-6">
+                        <a class="portfolio-item" href={{ url_for('futurama')}}>
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <div class="h2">Futurama</div>
+                                    <p class="mb-0">An American adult animated science fiction series that follows the adventures of the professional slacker Philip J. Fry, who is cryogenically preserved for 1000 years and is revived in the 31st century!</p>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="https://flxt.tmsimg.com/assets/p9932851_b_h8_ab.jpg" width="600" height="300" alt="..." />
+                        </a>
+                    </div>
+         <div class="col-lg-6">
+                        <a class="portfolio-item" href={{ url_for('the_office')}}>
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <div class="h2">The Office</div>
+                                    <p class="mb-0">An American mockumentary sitcom television series that depicts the everyday work lives of office employees at the Scranton, Pennsylvania, branch of the fictional Dunder Mifflin Paper Company.</p>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="https://flxt.tmsimg.com/assets/p185008_b_h10_ai.jpg" width="600" height="500" alt="..." />
+                        </a>
+                    </div>
+
+         <div class="col-lg-6">
+                        <a class="portfolio-item" href={{ url_for('seinfeld')}}>
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <div class="h2">Seinfeld</div>
+                                    <p class="mb-0">Four single friends -- comic Jerry Seinfeld, bungling George Costanza, frustrated working gal Elaine Benes and eccentric neighbor Cosmo Kramer -- deal with the absurdities of everyday life in New York City.</p>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="https://www.45tv.com/wp-content/uploads/2021/09/Seinfeld_1280X720.jpg" width="600" height="300" alt="..." />
+                        </a>
+                    </div>
+</div>
+       </div>
+  </section>
+</html>
